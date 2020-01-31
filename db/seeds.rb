@@ -9,7 +9,7 @@
 
 1.times do |i|
   @rescue = Rescue.create!(
-  name: Faker::House.room
+  name: Faker::Book.publisher
 )
 
 50.times do
@@ -21,3 +21,5 @@
   @rescue.save
 end
 end
+
+ p "Created #{Rescue.count} rescues"
