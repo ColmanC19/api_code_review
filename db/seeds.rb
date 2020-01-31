@@ -25,11 +25,13 @@
 #  p "Created #{Rescue.count} rescues"
 #
 
+
+
  1.times do |i|
    @rescue = Rescue.create!(
    name: Faker::Book.publisher
  )
-     25.times do
+     50.times do
        @rescue.animals.new(
        dogs: Faker::Creature::Dog.name,
        cats: Faker::Creature::Cat.name,
