@@ -32,6 +32,6 @@ class RescuesController < ApplicationController
   end
 
   def rescue_params
-    params.permit(:name)
+    params.permit(:name, :rescue_id)
   end
 end
