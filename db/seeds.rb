@@ -7,24 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# 1.times do |i|
-#   @rescue = Rescue.create!(
-#   name: Faker::Book.publisher
-# )
-#
-# 50.times do
-#   @rescue.animals.new(
-#   dogs: Faker::Creature::Dog.name,
-#   cats: Faker::Creature::Cat.name,
-#   # skater_id: nil
-# )
-#   @rescue.save
-# end
-# end
-#
-#  p "Created #{Rescue.count} rescues"
-#
-
 Rescue.destroy_all
 
 15.times do |s|
