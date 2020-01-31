@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+1.times do |i|
+  @rescue = Rescue.create!(
+  name: Faker::House.room
+)
+
+50.times do
+  @rescue.animals.new(
+  dogs: Faker::Creature::Dog.name,
+  cats: Faker::Creature::Cat.name,
+  # skater_id: nil
+)
+  @rescue.save
+end
+end
