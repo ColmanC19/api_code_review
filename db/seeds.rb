@@ -27,26 +27,24 @@
 
 Rescue.destroy_all
 
- 1.times do |i|
-   @rescue = Rescue.create!(
-   name: Faker::Book.publisher
- )
+15.times do |s|
+  @rescue = Rescue.create!(
+    name: Faker::Book.publisher)
 end
 
 Animal.destroy_all
 
-     50.times do
-       @rescue.animals.new(
-       dogs: Faker::Creature::Dog.name,
-       cats: Faker::Creature::Cat.name,
-       rescue_id: @rescue_id
-     )
-       # @rescue.save
-     end
+  50.times do |a|
+    @rescue.animals.create!(
+      dogs: Faker::Creature::Dog.name,
+      cats: Faker::Creature::Cat.name,
+      # rescue_id: rand(20))
+      rescue_id: @rescue_id)
+  end
    # end
 
    #     puts "Destination #{i}: Country is #{skater.country} and city is '#{destination.city}, and spot is '#{destination.spot}'."
    #   end
 
    # Seed.begin
-   p "Created #{Rescue.count} rescue"
+ p "Created #{Rescue.count} rescues, and #{Animal.count} animals,"
