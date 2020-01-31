@@ -1,11 +1,11 @@
-# _Rails Independent Project_
+# _Rails Independent Project: Week 6_
 
-#### _This application will display on a rails server an online commerce store. This page will have a list of Products, and each product will include a name, cost and country of origin. Each product will include an option to leave a review of. The review will include the users name, a rating and a body of review content. 1.17.2020_
+#### _This project successfully returns a response from an API call. The database is seeded using the faker Gem, so it will populate the name of animal rescues and the names of cats and dogs in that specific rescue. 1.31.2020_
 
 #### By _**Colman Currie**_
 
 ## Description
-### _This allows practice one-to-many relationships, databases, Active Record and rails._
+### _This allows practice with one-to-many relationships, databases, Active Record, seeding databases, rails, returning JSON objects via Postman, and successfully returns responses for each API call._
 
 ## Setup/Installation Requirements
 
@@ -15,21 +15,12 @@
 
 * Then you will call the directory using your terminal, make sure you're in the desktop and cd "project name here"
 
-* Run "bundle install" in your terminal after opening the project. This will install neccessary gems.
+* Run "bundle install" in your terminal after opening the project. This will install necessary gems.
 
-* Run rails s in your terminal. If successful you can open your browser and type in localhost:3000 to run the app.
-
-
+* Run rails s in your terminal. If successful you can open an API development platform of your choice (I use Postman: http://www.getpostman.com/). You can then type in localhost:3000/rescues to use the API and see methods.
 
 
-* It's a lot more files that I'm used to dealing with. If it seems overwhelming just know that you can simply look at most of the necessary code in the app folder on github.
-
-
-
-
-
-
-_This project uses the latest versions of Ruby, rails and the Gems included in the project._
+_This project uses these versions of Ruby(2.6.3), rails(6.0) and any version a specific Gem(located in Gemfile) included in the project._
 
 ## No known Bugs at this point.
 
@@ -41,7 +32,7 @@ _Please feel free to do a pull request or email me at curriecolman@gmail.com if 
 
 ## Technologies Used
 
-_This project was my first independent project while using rails. It also includes the use of Active Record, a database._
+_This is an API response only app. Meaning all backend logic. It includes the use of Active Record, a database, ruby, rails._
 
 ### License
 License Copyright (c) <2020>
@@ -52,16 +43,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Copyright (c)  **_Colman Currie_** _2019_
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Copyright (c)  *_Colman Currie_* _2020_
