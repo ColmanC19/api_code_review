@@ -1,4 +1,4 @@
-class BoardsController < ApplicationController
+class AnimalsController < ApplicationController
 
   def index
     @rescue = Rescue.find(params[:id])
@@ -7,17 +7,17 @@ class BoardsController < ApplicationController
   end
 
   def show
-    @animal = Board.find(params[:id])
+    @animal = Animal.find(params[:id])
     json_response(@animal)
   end
 
   def create
-    @animal = Board.create!(animal_params)
+    @animal = Animal.create!(animal_params)
     json_response(@animal, :created)
   end
 
   def update
-    @animal = Board.find(params[:id])
+    @animal = Animal.find(params[:id])
     if @animal.update!(animal_params)
     render status: 200, json: {
      message: "This animal has been updated successfully."
@@ -26,7 +26,7 @@ class BoardsController < ApplicationController
 end
 
   def destroy
-    @animal = Board.find(params[:id])
+    @animal = Animal.find(params[:id])
     @animal.destroy
   end
 
