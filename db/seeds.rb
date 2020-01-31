@@ -23,10 +23,5 @@ Animal.destroy_all
       # rescue_id: rand(20))
       rescue_id: @rescue_id)
   end
-   # end
 
-   #     puts "Destination #{i}: Country is #{skater.country} and city is '#{destination.city}, and spot is '#{destination.spot}'."
-   #   end
-
-   # Seed.begin
  p "Created #{Rescue.count} rescues, and #{Animal.count} animals,"

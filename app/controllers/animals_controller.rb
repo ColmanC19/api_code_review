@@ -1,8 +1,6 @@
 class AnimalsController < ApplicationController
 
   def index
-    # @rescue = Rescue.find(params[:id])
-    # @animals = @rescue.animals
     @animals = Animal.all
     json_response(@animals)
   end
