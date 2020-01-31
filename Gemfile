@@ -23,13 +23,10 @@ gem 'puma', '~> 3.11'
 # gem 'capistrano-rails', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'faker'
-gem 'faker'
-gem 'rspec'
-gem 'rspec-rails'
-gem 'pry'
+
 
 
 
@@ -39,7 +36,10 @@ gem 'pry'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'factory_bot_rails'
+  # gem 'factory_bot_rails'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'pry'
 end
 
 group :development do
