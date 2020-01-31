@@ -12,13 +12,17 @@ class RescuesController < ApplicationController
   end
 
   def create
-    @rescue = Rescue.create(rescue_params)
+    @rescue = Rescue.create!(rescue_params)
     json_response(@rescue)
   end
 
   def update
     @rescue = Rescue.find(params[:id])
-    @rescue.update(rescue_params)
+    if @rescue.update!(rescue_params)
+      render status: 200, json: {
+        message: "This rescue has been updated successfully."
+      }
+    end
   end
 
   def destroy
@@ -32,6 +36,6 @@ class RescuesController < ApplicationController
   end
 
   def rescue_params
-    params.permit(:name, :rescue_id)
+    params.permit(:name)
   end
 end
