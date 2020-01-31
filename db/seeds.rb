@@ -25,20 +25,24 @@
 #  p "Created #{Rescue.count} rescues"
 #
 
-
+Rescue.destroy_all
 
  1.times do |i|
    @rescue = Rescue.create!(
    name: Faker::Book.publisher
  )
+end
+
+Animal.destroy_all
+
      50.times do
        @rescue.animals.new(
        dogs: Faker::Creature::Dog.name,
        cats: Faker::Creature::Cat.name,
-       rescue_id: nil)
-       @rescue.save
+       rescue_id: @rescue_id
+     )
+       # @rescue.save
      end
-   end
    # end
 
    #     puts "Destination #{i}: Country is #{skater.country} and city is '#{destination.city}, and spot is '#{destination.spot}'."
