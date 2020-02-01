@@ -9,7 +9,7 @@
 
 Rescue.destroy_all
 
-15.times do |s|
+1.times do |s|
   @rescue = Rescue.create!(
     name: Faker::Book.publisher)
 end
