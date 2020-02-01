@@ -1,5 +1,6 @@
 # _Rails Independent Project: Week 6_
 
+
 #### _This project successfully returns a response from an API call. The database is seeded using the faker Gem, so it will populate the name of animal rescues and the names of cats and dogs in that specific rescue. 1.31.2020_
 
 #### By _**Colman Currie**_
