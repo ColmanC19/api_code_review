@@ -17,7 +17,22 @@
 
 * Run "bundle install" in your terminal after opening the project. This will install necessary gems.
 
-* Run rails s in your terminal. If successful you can open an API development platform of your choice (I use Postman: http://www.getpostman.com/). You can then type in localhost:3000/rescues to use the API and see methods.
+* Run rake db:migrate to reconnect the database.
+
+* Run rake db:seed to properly seed the database.
+
+* Run rails s in your terminal. If successful you can open an API development platform of your choice (I use Postman: http://www.getpostman.com/). Read below under "Endpoints and routes" to see how it works:
+
+
+### Endpoints and Routes
+
+* Using a GET request You can then type in localhost:3000/rescues on Postman. This will show all of the rescue names. If you wish to see an individual rescue, retype localhost:3000/rescues/id and replace "id" with the id listed for the shelter.
+
+*  Using a POST request you can Post a new rescue name. Type in localhost:3000/rescues You can add the name of a rescue by clicking on "Body" in Postman just below the URL and passing in key-value pairs (key = name, val = "new name here")
+
+* Using the PUT request is easy. Type in localhost:3000/rescues/(the id for the rescue you want to update goes here)/ Again, type in the key/val pairs and it will update a rescue, and return a confirmation message letting you know it was successful.
+
+* DELETE request will delete a rescue. Type in localhost:3000/rescues/(the id for the rescue you want to DELETE goes here)/ This will DELETE the rescue.
 
 
 _This project uses these versions of Ruby(2.6.3), rails(6.0) and any version a specific Gem(located in Gemfile) included in the project._
